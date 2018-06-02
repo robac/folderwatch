@@ -1,0 +1,30 @@
+general:
+  log_address: /dev/log
+  use_mysql: yes 
+  service_name: tftpwatch
+
+watch:
+  - source: /var/lib/tftpboot
+    destination: /data/tftp_backup
+    exclude:
+        - \/var\/lib\/tftpboot\/noarchive\/.*
+    max_filesize: 100000
+    event: CLOSE_WRITE
+  - source: /var/lib/tftpboot2
+    destination: /data/tftp_backup2
+    exclude:
+        - \/var\/lib\/tftpboot2\/noarchive\/.\*
+    max_filesize: 500000
+    event: CLOSE_WRITE
+
+
+mysql:
+  host: localhost
+  db: tftpbackup
+  user: tftpwatch
+  password: HJJK454*JHJKHdddd
+  table: backup
+  insert_command: "INSERT INTO {0} (src_filename, dst_filename, src_directory, dst_directory, moved, size) VALUES (\"{1}\", \"{2}\", \"{3}\", \"{4}\", now(), \"{5}\")"
+
+
+

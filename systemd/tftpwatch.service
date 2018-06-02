@@ -1,0 +1,10 @@
+[Unit]
+Description=TFTP Folder Watch service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/tftpwatch.sh /etc/tftpwatch.yaml
+Restart=always
+
+[Install]
+WantedBy=default.target
