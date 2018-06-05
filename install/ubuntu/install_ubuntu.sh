@@ -12,8 +12,8 @@ while true; do
 done
 
 sudo apt install python-yaml python-mysqldb inotify-tools
-sudo mkdir /etc/folderwatch
-sudo ln -s "$base_dir/conf/folderwatch.conf" /etc/folderwatch
+sudo ln -s "$base_dir/etc/folderwatch" /etc
 sudo ln -s "$base_dir/bin/folderwatch" /usr/local/bin
+sudo ln -s "$base_dir/systemd/folderwatch.service" /etc/systemd/system/
 sudo chmod +x "$base_dir/bin/folderwatch/folderwatch.sh"
 
