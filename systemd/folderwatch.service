@@ -1,9 +1,9 @@
 [Unit]
-Description=TFTP Folder Watch service
+Description=inotifywait folder watch service
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/tftpwatch.sh /etc/tftpwatch.yaml
+ExecStart=/bin/bash /usr/local/bin/folderwatch/folderwatch.sh /etc/folderwatch/folderwatch.conf
 Restart=always
 
 [Install]
