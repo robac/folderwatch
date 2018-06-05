@@ -7,9 +7,9 @@ inotifywait foldrer watch service for systemd
     <li>Python</li>    
       <ul>
         <li>PyYAML</li>
-        <li><i>(optional)</i>MySQLdb</li>
+        <li><i>(optional)</i> MySQLdb</li>
       </ul>  
-    <li><i>(optional)</i>MySQL/MariaDB</li>
+    <li><i>(optional)</i> MySQL/MariaDB</li>
   </ul>
   
   
