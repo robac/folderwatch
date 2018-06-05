@@ -1,7 +1,7 @@
 #!/bin/bash
 
 my_dir=`dirname $0`
-command=$(python $my_dir/tftpparameters.py $1)
+command=$(python $my_dir/folderwatch_args.py $1)
 
 set -f 
 echo $command
