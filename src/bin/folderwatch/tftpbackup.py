@@ -53,7 +53,7 @@ def process_config(config):
   if (not os.path.isfile(sys.argv[1])):
     raise Exception('Configuration file does not exist: ' + sys.argv[1])
 
-  with open("/etc/tftpwatch.yaml", 'r') as ymlfile:
+  with open(sys.argv[1], 'r') as ymlfile:
     cfg = yaml.load(ymlfile)
 
   config.log_address = cfg['general']['log_address'];
