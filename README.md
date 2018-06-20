@@ -16,6 +16,7 @@ inotifywait foldrer watch service for systemd
 git clone https://github.com/robac/folderwatch
 chmod +x folderwatch/install/ubuntu/install_ubuntu.sh
 ./folderwatch/install/ubuntu/install_ubuntu.sh
+./folderwatch/install/centos/install_centos.sh
 cp /etc/folderwatch/folderwatch.conf.sample /etc/folderwatch/folderwatch.conf</pre>
   <h2>run</h2>
     <pre>
