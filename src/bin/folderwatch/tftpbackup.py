@@ -7,6 +7,7 @@ import syslog
 import logging
 import logging.handlers
 import MySQLdb
+import shutil
 import yaml
 import math
 
@@ -169,7 +170,7 @@ def move_file(config):
     os.makedirs(dst_dir)
 
   config.log.info('Trying to move file ' + config.src_path + ' to ' + config.dst_path)
-  os.rename(config.src_path, config.dst_path)
+  shutil.move(config.src_path, config.dst_path)
   return
 
 
