@@ -17,6 +17,6 @@ CREATE TABLE `backup` (
   KEY `moved` (`moved`)
 ) ENGINE=InnoDB AUTO_INCREMENT=99 DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
 
-CREATE USER 'tftpbackup'@'localhost' IDENTIFIED BY 'password'
+CREATE USER 'tftpbackup'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON tftpbackup.backup TO 'tftpbackup'@'localhost';
 
