@@ -11,7 +11,7 @@ while true; do
     esac
 done
 
-sudo apt install python-yaml python-mysqldb inotify-tools
+sudo yum install python-yaml MySQL-python inotify-tools
 sudo ln -s "$base_dir/src/etc/folderwatch" /etc
 sudo ln -s "$base_dir/src/bin/folderwatch" /usr/local/bin
 sudo ln -s "$base_dir/src/systemd/folderwatch.service" /etc/systemd/system/

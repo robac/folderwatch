@@ -9,6 +9,8 @@ while true; do
     esac
 done
 
+sudo systemctl stop folderwatch 
+sudo systemctl disable folderwatch 
 sudo rm -f /etc/folderwatch
 sudo rm -f /usr/local/bin/folderwatch
 sudo rm -f /etc/systemd/system/folderwatch.service
