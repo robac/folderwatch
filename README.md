@@ -25,6 +25,7 @@ cp /etc/folderwatch/folderwatch.conf.sample /etc/folderwatch/folderwatch.conf</p
   <h2>run</h2>
     <pre>
 systemctl enable folderwatch 
+systemctl enable ./folderwatch/src/systemd/folderwatch.service
 systemctl start folderwatch </pre>
 
   <h2>stop</h2>
