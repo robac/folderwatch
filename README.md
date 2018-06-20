@@ -11,7 +11,7 @@ inotifywait foldrer watch service for systemd
       </ul>  
     <li><i>(optional)</i> MySQL/MariaDB</li>
   </ul>
-  <h2>installation</h2>
+  <h2>installation (Ubuntu / Centos)</h2>
     <pre>
 git clone https://github.com/robac/folderwatch
 chmod +x folderwatch/install/ubuntu/install_ubuntu.sh
