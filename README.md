@@ -12,7 +12,7 @@ inotifywait foldrer watch service for systemd
     <li><i>(optional)</i> MySQL/MariaDB</li>
   </ul>
   <h2>installation (Ubuntu / Centos)</h2>
-    <pre>
+<pre>
 git clone https://github.com/robac/folderwatch
 #Ubuntu
 chmod +x folderwatch/install/ubuntu/install_ubuntu.sh
@@ -21,7 +21,8 @@ chmod +x folderwatch/install/ubuntu/install_ubuntu.sh
 #Centos
 chmod +x folderwatch/install/centos/install_centos.sh
 ./folderwatch/install/centos/install_centos.sh
-cp /etc/folderwatch/folderwatch.conf.sample /etc/folderwatch/folderwatch.conf</pre>
+cp /etc/folderwatch/folderwatch.conf.sample /etc/folderwatch/folderwatch.conf
+</pre>
   <h2>run</h2>
     <pre>
 systemctl enable folderwatch 
